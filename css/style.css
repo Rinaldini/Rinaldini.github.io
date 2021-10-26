@@ -286,3 +286,10 @@ h2 {
 .filter li:first-child {
     padding-left: 0;
 }
+
+.language {
+    background-color: #3B3B3B;
+    color: white;
+    border: none;
+    width: 73%;
+}
