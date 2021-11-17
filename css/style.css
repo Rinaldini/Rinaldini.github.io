@@ -20,6 +20,9 @@ body {
     .container {
         width: 308px;
     }
+    .filter {
+        display: none;
+    }
 }
 
 header {
@@ -129,6 +132,12 @@ hr {
     margin: 25px 0px;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
+}
+
+.rotater:hover {
+    transform: rotate(360deg);
+    transition: transform 2s;
 }
 
 .description {
@@ -167,6 +176,13 @@ hr {
     font-size: 15px;
     line-height: 21px;
     color: #1D1D1D;
+    z-index: 1;
+}
+
+.contacts {
+    font-size: 13px;
+    line-height: 15px;
+    margin: 32px 0;
 }
 
 .contacts {
@@ -193,7 +209,10 @@ img[alt="icon"] {
 }
 
 #lang {
-    margin-right: 87px;
+    background-color: #3B3B3B;
+    color: #fff;
+    border-color: #3B3B3B;
+    width: 73%;
 }
 
 .dropmenu>.menu {
@@ -231,6 +250,7 @@ a {
 a:hover>ul {
     outline: #bebebe solid 3px;
     background-color: #bebebe;
+    transition: 0.5s;
 }
 
 .foodlist:hover {
@@ -266,7 +286,7 @@ h2 {
     justify-content: space-between;
     height: 41px;
     align-items: center;
-    margin-top: 45px;
+    margin-top: 10%;
     font-size: 13px;
     line-height: 15px;
 }
@@ -287,9 +307,23 @@ h2 {
     padding-left: 0;
 }
 
-.language {
-    background-color: #3B3B3B;
-    color: white;
-    border: none;
-    width: 73%;
+.contact {
+    color: #fff;
+}
+
+.input {
+    display: block;
+    width: 95%;
+    height: 42px;
+    margin: 25px 0;
+}
+
+textarea {
+    width: 95%;
+    height: 168px;
+    margin-bottom: 25px;
+}
+
+iframe {
+    margin-top: 10px;
 }
