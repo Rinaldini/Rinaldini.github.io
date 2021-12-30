@@ -133,11 +133,11 @@ hr {
     display: flex;
     justify-content: space-between;
     z-index: 2;
+    transition-duration: 0.5s;
 }
 
-.rotater:hover {
-    transform: rotate(360deg);
-    transition: transform 2s;
+.snack:hover {
+    box-shadow: 0 0 20px 6px rgb(0 0 0 / 81%);
 }
 
 .description {
